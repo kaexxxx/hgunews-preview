@@ -219,3 +219,54 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:aut
   .taskbar{min-height:var(--mobile-taskbar)}
   .start-menu>summary,.mobile-shortcuts a{min-height:40px}
 }
+
+/* Mobile density fix: keep secondary story metadata/title together to the right of the thumbnail. */
+@media(max-width:680px){
+  .secondary-list{margin-top:14px}
+  .secondary-story,
+  .secondary-story + .secondary-story{
+    grid-template-columns:92px minmax(0,1fr);
+    grid-template-rows:auto 1fr;
+    grid-template-areas:
+      "thumb meta"
+      "thumb title";
+    column-gap:12px;
+    row-gap:3px;
+    padding:11px 0;
+    align-items:start;
+  }
+  .secondary-story .story-thumb{
+    grid-area:thumb;
+    width:92px;
+    aspect-ratio:1/1;
+    align-self:start;
+  }
+  .secondary-story .article-meta{
+    grid-area:meta;
+    min-width:0;
+    margin:0;
+    align-self:end;
+    line-height:1.45;
+  }
+  .secondary-story h3{
+    grid-area:title;
+    min-width:0;
+    margin:0;
+    font-size:15px;
+    line-height:1.6;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  .secondary-story h3 a{display:block}
+  .story-card{padding-block:11px}
+  .story-card>div{min-width:0}
+  .story-card h3{overflow-wrap:anywhere;word-break:normal}
+}
+@media(max-width:390px){
+  .secondary-story,
+  .secondary-story + .secondary-story{
+    grid-template-columns:82px minmax(0,1fr);
+    column-gap:10px;
+  }
+  .secondary-story .story-thumb{width:82px}
+}
