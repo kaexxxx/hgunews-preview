@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>北海学園大学新聞｜Windows 2000 Prototype</title>
+  <meta name="description" content="北海学園大学新聞のWindows 2000風デザインプロトタイプ">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#3a6ea5">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./app.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">本文へ移動</a>
+  <div class="desktop">
+    <section class="application" aria-label="北海学園大学新聞">
+      <header class="window-chrome">
+        <div class="titlebar">
+          <span class="app-icon" aria-hidden="true">H</span>
+          <strong id="window-title">北海学園大学新聞</strong>
+          <span class="title-spacer"></span>
+          <span class="caption">HGU NEWS</span>
+          <button class="window-button raised" type="button" aria-label="ヘルプ" data-help>?</button>
+        </div>
+        <nav class="menubar" aria-label="メインメニュー">
+          <a href="#/">ホーム</a>
+          <details class="popup-menu" data-popup>
+            <summary>記事 <span aria-hidden="true">▾</span></summary>
+            <div class="menu-panel">
+              <a href="#/category/Campus">キャンパス</a>
+              <a href="#/category/Event">イベント</a>
+              <a href="#/category/Interview">インタビュー</a>
+              <a href="#/category/Sports">スポーツ</a>
+              <a href="#/category/Column">コラム</a>
+              <a href="#/category/Opinion">オピニオン</a>
+            </div>
+          </details>
+          <a href="#/viewer">紙面</a>
+          <details class="popup-menu" data-popup>
+            <summary>新聞会 <span aria-hidden="true">▾</span></summary>
+            <div class="menu-panel">
+              <a href="#/about">新聞会について</a>
+              <a href="#/greeting">会長挨拶</a>
+              <a href="#/recruit">部員募集</a>
+              <a href="#/social">公式SNS</a>
+              <a href="#/ads">広告募集</a>
+              <a href="#/contact">お問い合わせ</a>
+            </div>
+          </details>
+        </nav>
+        <div class="toolbar">
+          <a class="toolbar-button raised" href="#/"><span aria-hidden="true">⌂</span>トップ</a>
+          <button class="toolbar-button raised" type="button" data-back><span aria-hidden="true">←</span>戻る</button>
+          <a class="toolbar-button raised" href="#/viewer"><span aria-hidden="true">▤</span>紙面</a>
+          <button class="toolbar-button raised" type="button" data-search-open><span aria-hidden="true">⌕</span>検索</button>
+          <span class="toolbar-spacer"></span>
+          <span class="edition-label">北海学園大学新聞会</span>
+        </div>
+        <div class="addressbar">
+          <span>アドレス</span>
+          <div class="address-value inset"><span aria-hidden="true">▧</span><span data-address>hgunews://home</span></div>
+        </div>
+      </header>
+
+      <div class="explorer">
+        <aside class="folder-pane" aria-label="フォルダー">
+          <div class="pane-heading">フォルダー</div>
+          <div class="folder-content inset">
+            <a class="tree-root" href="#/"><span aria-hidden="true">▣</span>北海学園大学新聞</a>
+            <nav class="tree" data-tree>
+              <a href="#/" data-route="home">トップ</a>
+              <a href="#/category/Campus" data-route="category/Campus">キャンパス</a>
+              <a href="#/category/Event" data-route="category/Event">イベント</a>
+              <a href="#/category/Interview" data-route="category/Interview">インタビュー</a>
+              <a href="#/category/Sports" data-route="category/Sports">スポーツ</a>
+              <a href="#/category/Column" data-route="category/Column">コラム</a>
+              <a href="#/category/Opinion" data-route="category/Opinion">オピニオン</a>
+              <a href="#/viewer" data-route="viewer">紙面を読む</a>
+            </nav>
+            <div class="folder-divider"></div>
+            <p class="tree-label">新聞会の情報</p>
+            <nav class="info-tree">
+              <a href="#/about">新聞会について</a>
+              <a href="#/greeting">会長挨拶</a>
+              <a href="#/recruit">部員募集</a>
+              <a href="#/social">公式SNS</a>
+              <a href="#/ads">広告募集</a>
+              <a href="#/contact">お問い合わせ</a>
+            </nav>
+          </div>
+          <div class="folder-note"><strong>HGU NEWS</strong><span>北海学園大学新聞会<br>1950年創立</span></div>
+        </aside>
+
+        <div class="document inset">
+          <header class="masthead">
+            <a href="#/" class="identity">
+              <span class="name">北海学園大学新聞</span>
+              <span class="name-en">HOKKAI GAKUEN UNIVERSITY NEWSPAPER</span>
+            </a>
+            <span class="masthead-meta">北海学園大学新聞会<br><small>1950年創立</small></span>
+          </header>
+          <main id="content" tabindex="-1" aria-live="polite">
+            <div class="loading-window classic-panel">
+              <h1 class="panel-title">読み込み中</h1>
+              <div class="dialog-body"><span class="hourglass" aria-hidden="true">⌛</span><p>公開記事を読み込んでいます…</p></div>
+            </div>
+          </main>
+          <footer class="site-footer">
+            <strong>北海学園大学新聞</strong>
+            <nav><a href="#/about">新聞会について</a><a href="#/greeting">会長挨拶</a><a href="#/recruit">部員募集</a><a href="#/social">公式SNS</a><a href="#/ads">広告募集</a><a href="#/contact">お問い合わせ</a></nav>
+            <div><span>© 2026 北海学園大学新聞会</span><a href="https://hgunews.com" target="_blank" rel="noopener">現行サイト</a></div>
+          </footer>
+        </div>
+      </div>
+      <div class="statusbar"><span class="inset status-main" data-status>起動中...</span><span class="inset">Windows 2000 Prototype</span></div>
+    </section>
+    <p class="preview-note">GitHub Pages用プロトタイプ · 公開記事は hgunews.com の公開データを参照します。</p>
+  </div>
+
+  <div class="taskbar">
+    <details class="start-menu" data-popup>
+      <summary class="raised"><span class="app-icon" aria-hidden="true">H</span>スタート</summary>
+      <div class="menu-panel start-panel">
+        <span class="start-banner">HGU NEWS</span>
+        <nav>
+          <a href="#/">トップページ</a>
+          <a href="#/viewer">紙面を読む</a>
+          <hr>
+          <a href="#/about">新聞会について</a>
+          <a href="#/greeting">会長挨拶</a>
+          <a href="#/contact">お問い合わせ</a>
+        </nav>
+      </div>
+    </details>
+    <span class="task-divider" aria-hidden="true"></span>
+    <a class="task-button inset" href="#/"><span class="app-icon" aria-hidden="true">H</span><span>北海学園大学新聞</span></a>
+    <span class="task-clock inset" data-clock>--:--</span>
+  </div>
+
+  <dialog class="classic-dialog" data-search-dialog>
+    <form method="dialog" class="dialog-window">
+      <div class="dialog-titlebar"><strong>記事を検索</strong><button class="raised" value="cancel" aria-label="閉じる">×</button></div>
+      <div class="dialog-body search-dialog-body">
+        <label for="global-search">キーワード</label>
+        <div class="search-field"><input id="global-search" type="search" autocomplete="off"><button class="raised" value="default" data-search-submit>検索</button></div>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
