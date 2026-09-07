@@ -1,6 +1,6 @@
-# HGU News — Windows 2000 Prototype
+# HGU News — UIデザイン改変版
 
-北海学園大学新聞 `hgunews.com` の公開情報を使う、GitHub Pages向けのWindows 2000風UIプロトタイプです。
+北海学園大学新聞 `hgunews.com` の公開情報を使う、GitHub Pages向けのUIデザイン改変版です。
 
 ## 特徴
 
@@ -8,7 +8,7 @@
 - トップ、カテゴリー、記事、紙面、会長挨拶、新聞会について、部員募集、公式SNS、広告募集、お問い合わせ、検索を1つの静的サイトで表示
 - 公開記事はクライアント側からFirestoreの公開データを読み込むため、サーバーは不要
 - 記事本文HTMLはブラウザー側で許可要素だけにサニタイズ
-- Windows 2000風のタイトルバー、メニュー、エクスプローラー、タブ、ダイアログ、タスクバーを実装
+- クラシックUI風のタイトルバー、メニュー、エクスプローラー、タブ、ダイアログ、タスクバーを実装
 - `DotGothic16` をGoogle Fontsから読み込み、UIはTahoma / MS UI Gothic / MS PGothic系のフォントスタック
 - `noindex,nofollow` で検索エンジンへの掲載を抑制
 
